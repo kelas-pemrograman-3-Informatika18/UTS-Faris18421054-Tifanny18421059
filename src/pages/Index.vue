@@ -34,7 +34,7 @@
 
     <q-card dark class="bg-teal-14">
       <q-card-section class="my-card">
-        <div class="text-h5">Welcome!</div>
+        <div class="text-h5">Welcome {{ $q.localStorage.getItem('dataUser').username }}!</div>
         <div class="text-subtitle1">in this website you can wonder on many books as you wish,
           find your desired book and swim into the vast experience of literature</div>
       </q-card-section>
@@ -422,11 +422,30 @@ export default {
   name: 'PageIndex',
   data () {
     return {
+      columns: [
+        {
+          name: 'name',
+          required: true,
+          align: 'left',
+          field: row => row.name,
+          format: val => `${val}`,
+          sortable: true
+        }
+      ],
+      data: [],
       slide: 1,
       slide2: 'style',
       book1: 5,
       book2: 4,
       book3: 3
+    }
+  },
+  created () {
+    this.getData()
+  },
+  methods: {
+    getData () {
+      this.$q.localStorage.getItem('dataUser')
     }
   }
 }

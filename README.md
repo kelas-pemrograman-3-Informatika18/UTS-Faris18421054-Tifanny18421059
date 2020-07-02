@@ -1,6 +1,6 @@
-# App Perpustakaan (uts_perpustakaan)
+# Quasar App (library)
 
-project aplikasi perpustakaan untuk ujian tengah semester pemograman 3
+A Quasar Framework app
 
 ## Install the dependencies
 ```bash

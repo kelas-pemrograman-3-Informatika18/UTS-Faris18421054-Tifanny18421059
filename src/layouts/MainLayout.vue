@@ -10,26 +10,26 @@
           <q-btn flat class="q-py-md" to="/about" color="text-white" label="about us"/>
           <q-btn-dropdown flat class="q-py-md" color="dark text-white" label="Genre">
             <q-list>
-              <q-item clickable v-close-popup to="/error">
+              <q-item clickable v-close-popup to="/history">
                 <q-item-section>
-                  <q-item-label>Horror</q-item-label>
+                  <q-item-label>History</q-item-label>
                 </q-item-section>
               </q-item>
 
-              <q-item clickable v-close-popup to="/error">
+              <q-item clickable v-close-popup to="/inspiring">
                 <q-item-section>
-                  <q-item-label>Fantasy</q-item-label>
+                  <q-item-label>Inspiring</q-item-label>
                 </q-item-section>
               </q-item>
 
-              <q-item clickable v-close-popup to="/error">
+              <q-item clickable v-close-popup to="/other">
                 <q-item-section>
-                  <q-item-label>Sci-fi</q-item-label>
+                  <q-item-label>Other</q-item-label>
                 </q-item-section>
               </q-item>
             </q-list>
           </q-btn-dropdown>
-          <q-btn flat class="q-py-md" to="/error" color="text-white" label="Contact"/>
+          <q-btn flat class="q-py-md" to="/contact" color="text-white" label="Contact"/>
         </div>
         <q-btn flat rounded class="q-ma-md" to="/profile" size="sm" label="profile" />
         <q-input icon="search" rounded outlined bg-color="white" v-model="text" dense>

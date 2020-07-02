@@ -1,28 +1,24 @@
 {
-  "name": "uts_perpustakaan",
+  "name": "library",
   "version": "0.0.1",
-  "description": "project aplikasi perpustakaan untuk ujian tengah semester pemograman 3",
-  "productName": "App Perpustakaan",
+  "description": "A Quasar Framework app",
+  "productName": "Quasar App",
   "cordovaId": "org.cordova.quasar.app",
   "capacitorId": "",
-  "author": "faris <farisalchaula27@gmail.com>",
+  "author": "tifanny faris",
   "private": true,
   "scripts": {
-    "lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore ./",
+    "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
-    "@vue/composition-api": "^0.5.0",
     "axios": "^0.18.1",
-    "quasar": "^1.9.5",
+    "quasar": "^1.0.0",
     "vue-i18n": "^8.0.0"
   },
   "devDependencies": {
-    "@quasar/app": "^1.6.2",
-    "@types/node": "^10.17.15",
-    "@typescript-eslint/eslint-plugin": "^2.17.0",
-    "@typescript-eslint/parser": "^2.17.0",
+    "@quasar/app": "^1.0.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.0",
